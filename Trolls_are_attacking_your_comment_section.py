@@ -12,5 +12,14 @@ Note: for this kata y isn't considered a vowel.
 
 """
 
+
+string_ = "This website is for losers LOL!"
+
+
 def disemvowel(string_):
+    string_ = string_.translate({ord(i): None for i in "AEIOUaeiou"})
+
     return string_
+
+
+print(disemvowel(string_))
